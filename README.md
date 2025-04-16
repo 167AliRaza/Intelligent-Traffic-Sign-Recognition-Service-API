@@ -48,5 +48,68 @@ The model is a CNN built using TensorFlow/Keras and trained on 30x30 resized tra
     ├── class_0/
     ├── class_1/
     └── ...
+---
+
+##🚀 FastAPI Integration
+The trained model is served using FastAPI to enable real-time traffic sign prediction from uploaded images.
+
+🔌 Endpoint: /predict
+Method: POST
+
+Accepts: Image file (form-data, field name: image)
+
+Returns: Predicted class name and confidence
+
+✅ Example Response
+```json
+{
+  "predicted_class": "Speed Limit 50 km/h",
+  "confidence": 0.97
+}
+📚 Visit http://127.0.0.1:8000/docs for Swagger UI.
+---
+##⚙️ Setup Instructions
+###1. Clone the repository
+```bash
+git clone https://github.com/yourusername/traffic-sign-classifier.git
+cd traffic-sign-classifier
+###2. Install dependencies
+```bash
+
+pip install -r requirements.txt
+###3. Train the model (optional)
+```bash
+python model_traning.py
+###4. Start the FastAPI server
+```bash
+uvicorn main:app --reload
+Make sure model.h5 exists in the root directory.
+---
+##🧪 Prediction Scripts
+For testing without API:
+
+Single Image Prediction: single_img_prediction.py
+
+Batch Prediction: bulk_prediction.py
+---
+##🛠 Tech Stack
+Python 🐍
+
+TensorFlow / Keras
+
+FastAPI
+
+Uvicorn
+
+GTSRB Dataset
+---
+
+##📸 Sample Predictions
+Images can be placed inside the predicted_classes/ folder and used for testing.
+---
+##📄 License
+Licensed under the MIT License.
+
+
 
 
