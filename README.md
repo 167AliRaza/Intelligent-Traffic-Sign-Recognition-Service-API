@@ -66,11 +66,10 @@ The trained model is served using FastAPI to enable real-time traffic sign predi
   "confidence": 0.97
 }
 ```
----
-
-
-##📚 Visit http://127.0.0.1:8000/docs for Swagger UI.
+📚 Visit http://127.0.0.1:8000/docs for Swagger UI.
 
 ---
+
+
 
    
