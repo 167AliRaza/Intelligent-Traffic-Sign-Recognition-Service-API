@@ -48,6 +48,7 @@ The model is a CNN built using TensorFlow/Keras and trained on 30x30 resized tra
     ├── class_0/
     ├── class_1/
     └── ...
+```
 ---
 
 ##🚀 FastAPI Integration
