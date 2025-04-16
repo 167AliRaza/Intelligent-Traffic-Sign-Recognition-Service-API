@@ -39,7 +39,7 @@ The model is a CNN built using TensorFlow/Keras and trained on 30x30 resized tra
 ---
 
 ## 📁 Dataset Structure
-dataset/
+```dataset/
 ├── train/
 │   ├── class_0/
 │   ├── class_1/
