@@ -51,25 +51,23 @@ The model is a CNN built using TensorFlow/Keras and trained on 30x30 resized tra
 ```
 ---
 
-
-##🚀 FastAPI Integration
+# 🚀 FastAPI Integration
 The trained model is served using FastAPI to enable real-time traffic sign prediction from uploaded images.
 
-🔌 Endpoint: /predict
-Method: POST
+**🔌 Endpoint**: `/predict`  
+**Method**: POST  
+**Accepts**: Image file (form-data, field name: `image`)  
+**Returns**: Predicted class name and confidence  
 
-Accepts: Image file (form-data, field name: image)
-
-Returns: Predicted class name and confidence
-
-✅ Example Response
+**✅ Example Response**  
 ```json
 {
   "predicted_class": "Speed Limit 50 km/h",
   "confidence": 0.97
 }
-```
-📚 Visit http://127.0.0.1:8000/docs for Swagger UI.
+
+##📚 Visit http://127.0.0.1:8000/docs for Swagger UI.
+
 ---
 
 
