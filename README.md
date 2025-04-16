@@ -70,6 +70,22 @@ The trained model is served using FastAPI to enable real-time traffic sign predi
 
 ---
 
+## 🛠 Tech Stack
 
+- Python 🐍
+- TensorFlow / Keras
+- FastAPI
+- Uvicorn
+- GTSRB Dataset
 
-   
+---
+
+## 📸 Sample Predictions
+
+Place images in the `predicted_classes/` folder for testing.
+
+---
+
+## 📄 License
+
+Licensed under the MIT License.
